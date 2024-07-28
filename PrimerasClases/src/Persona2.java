@@ -25,6 +25,9 @@ public String enviarSaludo(String saludado){
     return "Hola, como estas " + saludado + "?";
 }
 
+
+// Definision de getters y setters 
+// *** Para hacerlos en forma automatica en VS botón derecho -> source action -> generate getters and setters
 public String getApellido() {
     return apellido;
 }
