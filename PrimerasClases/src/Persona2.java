@@ -1,4 +1,19 @@
+import java.beans.MethodDescriptor;
+
 public class Persona2 {
+
+***************************************************************************************************
+Orden en que deberían aparecer las secciones de una clase
+
+1)Atrivutos
+2)Constructor (y sobrecarga)
+3)Métodos 
+4)Getters y setters 
+
+******************************************************************************************************
+
+
+
 // atributos (estados y caracteristicas de un objeto)
 private String nombre;
 private String apellido;
