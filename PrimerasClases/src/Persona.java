@@ -4,6 +4,7 @@ public class Persona {
     String nombre;
     String apellido;
     int edad;
+    Carrera carrera;
     
     // Métodos (comportamientos de un objeto)
 
@@ -12,6 +13,7 @@ public class Persona {
 
     }
     public String enviarSaludo(String saludado){
-        return "hola, como estas " + saludo + "?";
+        if (edad > 40) return "Buenos días, querido " + saludado;
+        return "Hola, como estas " + saludado + "?";
     } 
 }

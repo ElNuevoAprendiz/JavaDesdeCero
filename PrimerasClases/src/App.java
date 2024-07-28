@@ -13,7 +13,8 @@ public class App {
 
 
 
-        System.out.println(persona1.apellido + "," + persona1.nombre + " tiene "+ persona1.edad + " años");
-        System.out.println(persona2.apellido + "," + persona2.nombre + " tiene "+ persona2.edad + " años");
+        System.out.println(persona1.darNombreCompleto() + " tiene "+ persona1.edad + " años");
+        System.out.println(persona2.darNombreCompleto() + " tiene "+ persona2.edad + " años");
+        System.out.println(persona1.enviarSaludo("Tito"));
     }
 }
