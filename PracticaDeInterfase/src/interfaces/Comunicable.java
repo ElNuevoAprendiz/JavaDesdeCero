@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface Comunicacion {
+public interface Comunicable {
 
     
     //La clase q implemente esta interface estará obligada a usar este método.
