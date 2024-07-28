@@ -10,7 +10,7 @@ public class Carrera {
         this.estaEnCursos = enCurso;
     }
 
-    //Sobrecarga de constructores
+    //Sobrecarga del constructor
     public Carrera(String nombre){
         this.nombre = nombre;
     }
