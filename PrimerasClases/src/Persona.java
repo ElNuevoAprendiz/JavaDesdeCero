@@ -5,6 +5,18 @@ public class Persona {
     String apellido;
     int edad;
     Carrera carrera;
+
+    //Constructor
+
+    public Persona(String nombre, String apellido, int edad, String nombreCarrera{
+        carrera = new Carrera();
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        carrera.nombre = nombreCarrera;
+
+
+    }
     
     // Métodos (comportamientos de un objeto)
 
