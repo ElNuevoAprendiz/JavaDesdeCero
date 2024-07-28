@@ -14,12 +14,12 @@ public class Pulpo extends CriaturasMarinas implements Comunicable, Alimentable{
     @Override
     void nadar() {
         
-        System.out.println(nombre + "esta nadando con sus " + cantTentaculos + " tentaculos");
+        System.out.println(nombre + " esta nadando con sus " + cantTentaculos + " tentaculos");
     }
 
     @Override
     public void comunicarse() {
-        System.out.println(nombre + "suluda con " + cantTentaculos + "tentaculos");
+        System.out.println(nombre + " saluda con " + cantTentaculos + " tentaculos");
     }
 
     @Override

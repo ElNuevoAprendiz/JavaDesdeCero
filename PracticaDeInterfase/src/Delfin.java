@@ -14,12 +14,12 @@ public class Delfin extends CriaturasMarinas implements Comunicable, Alimentable
     @Override
 
     void nadar() {
-        System.out.println(nombre + "esta nadando como delfin");
+        System.out.println(nombre + " esta nadando como delfin");
     }
 
     @Override
     public void comunicarse() {
-        System.out.println(nombre + "emite chasquidos  y sonidos para comunicarse");
+        System.out.println(nombre + " emite chasquidos  y sonidos para comunicarse");
     }
 
     @Override
