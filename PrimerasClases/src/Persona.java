@@ -8,7 +8,7 @@ public class Persona {
 
     //Constructor
 
-    public Persona(String nombre, String apellido, int edad, String nombreCarrera{
+    public Persona(String nombre, String apellido, int edad, String nombreCarrera){
         carrera = new Carrera();
         this.nombre = nombre;
         this.apellido = apellido;
