@@ -1,4 +1,4 @@
-import javax.naming.ldap.PagedResultsControl;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -10,7 +10,7 @@ public class App {
 
         System.out.println(persona1.darNombreCompleto() + " tiene "+ persona1.edad + " años" + " y esta recibido de " + persona1.carrera.nombre);
         System.out.println(persona2.darNombreCompleto() + " tiene "+ persona2.edad + " años" + " y esta recibido de " + persona2.carrera.nombre);
-        System.out.println(persona3.darNombreCompleto() + " tiene "+ persona2.edad + " años");
+        System.out.println(persona3.darNombreCompleto() + " tiene "+ persona3.getEdad() + " años");
        
         
         
