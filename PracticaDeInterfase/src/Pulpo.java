@@ -1,6 +1,7 @@
+import interfaces.Alimentable;
 import interfaces.Comunicable;
 
-public class Pulpo extends CriaturasMarinas implements Comunicable{
+public class Pulpo extends CriaturasMarinas implements Comunicable, Alimentable{
 
     int cantTentaculos;
 
@@ -12,13 +13,18 @@ public class Pulpo extends CriaturasMarinas implements Comunicable{
 
     @Override
     void nadar() {
-        // TODO Auto-generated method stub
+        
         System.out.println(nombre + "esta nadando con sus " + cantTentaculos + " tentaculos");
     }
 
     @Override
     public void comunicarse() {
         System.out.println(nombre + "suluda con " + cantTentaculos + "tentaculos");
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Estamos alimentando con peces a " + nombre);
     }
 
 }

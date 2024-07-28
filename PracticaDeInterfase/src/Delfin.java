@@ -1,7 +1,8 @@
+import interfaces.Alimentable;
 import interfaces.Comunicable;
 
 
-public class Delfin extends CriaturasMarinas implements Comunicable{
+public class Delfin extends CriaturasMarinas implements Comunicable, Alimentable{
 
 
    
@@ -19,6 +20,11 @@ public class Delfin extends CriaturasMarinas implements Comunicable{
     @Override
     public void comunicarse() {
         System.out.println(nombre + "emite chasquidos  y sonidos para comunicarse");
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Estamos alimentando con lombrices a " + nombre);
     }
 
 }
