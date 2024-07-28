@@ -1,4 +1,6 @@
-public class Delfin extends CriaturasMarinas{
+import interfaces.Comunicacion;
+
+public class Delfin extends CriaturasMarinas implements Comunicacion{
 
    
    
