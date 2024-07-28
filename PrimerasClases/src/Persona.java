@@ -8,12 +8,23 @@ public class Persona {
 
     //Constructor
 
-    public Persona(String nombre, String apellido, int edad, String nombreCarrera){
-        carrera = new Carrera();
+    public Persona(String nombre, String apellido, int edad, String nombreCarrera, int duracionCarrera, boolean estaCursando){
+        carrera = new Carrera(nombreCarrera, duracionCarrera, estaCursando);
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
-        carrera.nombre = nombreCarrera;
+        
+
+
+    }
+
+    //sobrecarga de contructor
+    public Persona(String nombre, String apellido, int edad, String nombreCarrera){
+        carrera = new Carrera(nombreCarrera);
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        
 
 
     }

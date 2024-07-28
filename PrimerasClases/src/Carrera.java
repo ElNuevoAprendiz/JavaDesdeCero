@@ -1,4 +1,5 @@
 public class Carrera {
+
     String nombre;
     int duracion;
     boolean estaEnCursos;
@@ -7,6 +8,11 @@ public class Carrera {
         this.nombre = nombre;
         this.duracion = duracion;
         this.estaEnCursos = enCurso;
+    }
+
+    //Sobrecarga de constructores
+    public Carrera(String nombre){
+        this.nombre = nombre;
     }
 
 }
