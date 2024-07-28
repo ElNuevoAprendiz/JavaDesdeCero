@@ -15,6 +15,6 @@ public class Animal {
 
 
     public String hacerSonido(){
-        return "Hacer sonido genérico";
+        return "Grr";
     }
 }

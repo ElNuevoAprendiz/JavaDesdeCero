@@ -4,7 +4,7 @@ public class Gato extends Animal{
         super(nombre, cantPatas, edad);
 
     }
-
+    // Se redefina el metodo con el decorador @Override
     @Override
 
     public String hacerSonido(){
