@@ -4,7 +4,7 @@ public class Animal {
     String nombre;
     int cantPatas;
     int edad;
-    static int contadorDeAnimales = 0;
+    static int contadorDeAnimales = 0; // Atributo estático
 
     
     // Constructor
@@ -21,6 +21,7 @@ public class Animal {
         return "Grr";
     }
 
+     // Método estático
     public static int getCantidadDeAnimales(){
         return contadorDeAnimales;
     }
