@@ -7,7 +7,7 @@ public class App {
         int resultado;
 
         
-
+ 
         try {
             resultado = nuro1/nro2;
             System.out.println(resultado);
