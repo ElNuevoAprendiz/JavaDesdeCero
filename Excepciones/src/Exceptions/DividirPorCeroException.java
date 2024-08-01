@@ -1,6 +1,6 @@
 package Exceptions;
 
-public class DividirPorCeroException extend Exception{
+public class DividirPorCeroException extends Exception{
     
     @Override
     public String getMessage(){
