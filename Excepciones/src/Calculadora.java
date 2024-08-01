@@ -1,4 +1,5 @@
-import Exceptions.DividirPorCeroException;
+import Exceptions.CalculadoraExcepcion;
+
 
 public class Calculadora {
     /* Ya que una clase no puede extender de varias, y puede necesitar muchas excepciones, 
@@ -17,9 +18,9 @@ public class Calculadora {
     Luego dentro del método que la va a usar hay que hacer el manejo
     */ 
 
-    public int dividir(int dividendo, int divisor) throws DividirPorCeroException {
+    public int dividir(int dividendo, int divisor) throws CalculadoraExcepcion {
         
-        if(divisor ==0) throw new DividirPorCeroException(); // La situación que sabemos que va a generar la excepción
+        if(divisor ==0) throw new CalculadoraExcepcion("No se puede dividir por cero"); // La situación que sabemos que va a generar la excepción
         // Y sino continua el flujo normal
         return dividendo / divisor;
     }
