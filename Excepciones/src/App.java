@@ -1,3 +1,5 @@
+import Exceptions.DividirPorCeroException;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // Se comienza a trabajar con las excepciones unchecked (no verificadas)
@@ -6,17 +8,22 @@ public class App {
         int nro2 = 0;
         int resultado;
 
-        
+        Calculadora calculadora = new Calculadora();
+
  
         try {
-            resultado = nuro1/nro2;
+            resultado = calculadora.dividir(nuro1, nro2);
             System.out.println(resultado);
-        } catch (Exception e) {// en vez de e se puede poner error o cualquier cosa
+        } catch (DividirPorCeroException e) {// Remplzazamos Exception por nuestra excepción DividirPorCeroException, 
+            //porque saber que el el tipo de excepcion que va a ocurrir, y ademas en vez de "e" se puede poner error o cualquier cosa
            
             e.printStackTrace();//No da la misma info que cuando se presenta el error 
 
             // Aunque nos imprime la linea que sigue se ejecuta
             System.out.println("Esto va después de la excepcion");
+        }
+        finally{
+            System.out.println("Hemos finalizado el calculo haya sido exitoso o no");
         }
     }
 }
