@@ -6,25 +6,23 @@ import java.util.Scanner;
 
 
 public class PracticaScanner {
-
-    public static int numerosAlAzar(int limiteInf, int limiteSup) {
-        int numero;
-        //numero = Math.random(limiteSup-limiteInf)*limiteInf+1;
-        numero = (int)(Math.random()*(limiteSup-limiteInf)+limiteInf+1);
-
-        return numero;
-    } 
+ 
     public static void main(String[] args) throws Exception {
-        int limiteSuperior, limiteInferior, nroAlAzar;
-
+        
+        int nroAlAzar;
+        
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Ingrese el limite superior");
-        limiteSuperior = teclado.nextInt();
+        int limiteSuperior = teclado.nextInt();
         System.out.println("Ingrese el limite inferior");
-        limiteInferior = teclado.nextInt();
+        int limiteInferior = teclado.nextInt();
 
-        nroAlAzar = numerosAlAzar(limiteInferior,limiteSuperior);
+        GeneradorDeNroAlAzarEntero generador = new GeneradorDeNroAlAzarEntero(limiteInferior, limiteSuperior);
+
+        nroAlAzar = generador.generarNro();
+
+        //nroAlAzar = numerosAlAzar(limiteInferior,limiteSuperior);
         System.out.println(nroAlAzar);
 
 
