@@ -36,6 +36,7 @@ int num = aleatorio.nextInt(9)+1;
 int posicion=0;
 
 EstadoCivil[] valores_enumeracion = EstadoCivil.values();
+
 for(EstadoCivil estado: valores_enumeracion){
 posicion = estado.ordinal();
 System.out.println(“La constante número “+ posicion+
