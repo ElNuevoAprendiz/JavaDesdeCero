@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Persona {
 
     /*
@@ -33,19 +35,51 @@ public class Persona {
             this.dni = dni;
             this.bCasado =  bCasado; 
             
-            
-
-            
          }
          
+
+         //La sobreescritura del método toString, puede devolver una cadena que comienza con el nombre del objeto
+         //y luego entre paréntesis (como un mapa?) los atrivutos o propiedades del objeto con sus valores.
          @Override
          public String toString(){
-
+            return "Persona{"+
+                    "nombre='" + nombre + '\'' + 
+                    ", edad=" + edad +
+                    '}';
             
          }
 
+         @Override
+         public boolean equals(Object o){
+            if(this == o) return true;
+            if(o == null || getClass() != o.getClass()) return false;
+            //Persona persona = (Persona) o;: Castea el objeto o a Persona para poder acceder a sus atributos.
 
-         public char getSexo() {
+            Persona persona = (Persona) o; //Según yo, crea un objeto persona, que los castea como persona
+            // pero a la vez al hacerlo igual a o, apuntan los dos al mismo objeto o.
+
+
+            //return edad == persona.edad && Objects.equals(nombre, persona.nombre);
+
+            // edad es del objeto, como si fuera this.edad, y persona.edad es del objeto que estoy comparando
+            //Compara la edad usando el operador == ya que es la forma de comparar si dos enteros son iguales
+            // y compara si es igual el nombre usando Objects.equals() para manejar correctamente los casos en 
+            //que nombre pueda ser nulo. (Ya que es el método que se usa para compara String)
+
+            return edad == persona.edad && sexo == persona.sexo && bCasado == persona.bCasado &&  Objects.equals(nombre, persona.nombre) && Objects.equals(dni, persona.dni);
+
+         }
+
+
+         
+
+        @Override
+        public int hashCode() {
+            
+            return Objects.hash(edad, sexo, bCasado, nombre, dni);
+        }
+
+        public char getSexo() {
             return sexo;
         }
 
